@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #003d2b;
+    height: auto;
+    align-items: center;
+}
+
+.imagem_logo img {
+    height: 60px;
+    width: 120px;
+    margin-right: 200px;
+    padding: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding-left:40px;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav a:hover{
+    color: #84d443;
+}
+
+#btn {
+    padding: 7px 17px;
+    border-radius: 12px;
+    background: #84d443;
+    border: 2px solid #84d443;
+    color: #26292D;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    outline: none;
+    margin-left: 40px;
+}
+
+#btn:hover{
+    background: transparent;
+    color: #84d443;
+}
+
+button a {
+    text-decoration: none;
+    color: #26292D;
+    font-family: 'Rubik', sans-serif;
+}
+
+button a:hover{
+    color: #84d443;
+}
+
+.container--apresentacao {
+    display:flex;
+    justify-content: center;
+    padding: 70px;
+    background-image: radial-gradient(1800px 950px at 50% -90%,#20252a 99.8%,#31383f);
+}
+
+.video {
+    box-shadow:
+    0px 0px 1.2px rgba(0, 0, 0, 0.013),
+    0px 0px 2.7px rgba(0, 0, 0, 0.05),
+    0px 0px 4.6px rgba(0, 0, 0, 0.099),
+    0px 0px 6.9px rgba(0, 0, 0, 0.159),
+    0px 0px 10px rgba(0, 0, 0, 0.231),
+    0px 0px 14.2px rgba(0, 0, 0, 0.316),
+    0px 0px 20.1px rgba(0, 0, 0, 0.42),
+    0px 0px 29.2px rgba(0, 0, 0, 0.55),
+    0px 0px 45px rgba(0, 0, 0, 0.723),
+    0px 0px 80px rgba(0, 0, 0, 1);
+}
+
+
+.planos {
+    background-color: #fff;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+
+.planos--titulo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #26292D;
+    margin-top: 40px;
+}
+
+.planos--titulo h1 b {
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.oferta {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.card--planos {
+    width: 300px;
+    height: 300px;
+    background: #003d2b;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+    margin: 30px;
+    margin-top: 70px;
+    box-shadow:
+        0px 0px 3.6px rgba(0, 0, 0, 0.026),
+        0px 0px 10px rgba(0, 0, 0, 0.081),
+        0px 0px 24.1px rgba(0, 0, 0, 0.168),
+        0px 0px 80px rgba(0, 0, 0, 0.35);
+
+}
+
+.card--planos:hover {
+    transform: scale(.9);
+}
+
+.card--planos:after {
+    height:280px;
+}
+
+.card--planos:hover img {
+    transform: scale(1.25);
+}
+
+.card--planos:after {
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 20;
+    transition: all .25s ease;
+}
+
+.card--planos img {
+    height: 100%;
+    z-index: 10;
+    transition: all .25s ease;
+}
+
+.card--planos .con-text {
+    z-index: 30;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.card--planos .con-text button {
+    padding: 7px 14px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #84d443;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.card--planos .con-text button:hover{
+    background: #84d443;
+    color: #26292D;
+}
+
+.card--planos .con-text a {
+    color: #fff;
+}
+
+.card--planos .con-text a:hover{
+    background: #84d443;
+    color: #26292D;
+}
+
+.maquinas--titulo h1 b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    color: #26292D;
+    font-size: 50px;
+}
+
+.maquinas--titulo h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Rubik', sans-serif;
+    color: #26292D;
+    margin-left: 180px;
+}
+
+.basico--maquinas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--vantagens {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 40px;
+    gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+    justify-content: center;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 290px;
+    max-height: 160px
+}
+
+.vantagens {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    color: #26292D;
+    padding: 40px;
+    font-size: 40px;
+}
